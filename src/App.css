@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+:root {
+
+    /* Font family */
+    --mainFont: 'Roboto', sans-serif;
+    /* Font size */
+    --text1: 36px;
+    --text2: 18px;
+    --text3: 16px;
+
+    /* Colours */
+    --mainColor: #000259;
+    --secondaryColor: #ffffff;
+    --auxiliarColor: #999abd;
+    --textColor: #000000;
+    --auxiliarTextColor: #c4c4c4;
+    --green: #00c49a;
+    --red: #a60067;
+
+    /* Borders */
+    --border-button: 10px;
+    --border-wrapper: 30px;
+
+
+}
+.App {
+    /* background-color: var(--mainColor); */
+    font-family: var(--mainFont);
+    
+
+}
+
+h1 {
+    margin: 0;
+}

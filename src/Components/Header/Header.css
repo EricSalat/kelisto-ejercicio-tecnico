@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--mainColor);
+}
+
+.header p {
+    font-size: var(--text3);
+    color: var(--secondaryColor);
+}
+
+.header i {
+    justify-content: flex-end !important;
+    color: var(--secondaryColor);
+}
