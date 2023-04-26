@@ -1,0 +1,8 @@
+.wrapper {
+    border-radius: var(--border-wrapper);
+    background-color: var(--secondaryColor);
+    background-color: yellowgreen;
+    /*Cambiarla*/
+    height: 300px;
+    padding: 30px;
+}

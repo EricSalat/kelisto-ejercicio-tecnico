@@ -1,7 +1,9 @@
 .header {
     display: flex;
     justify-content: center;
+    align-items: baseline;
     background-color: var(--mainColor);
+    padding: 20px 0;
 }
 
 .header p {
@@ -10,6 +12,7 @@
 }
 
 .header i {
-    justify-content: flex-end !important;
     color: var(--secondaryColor);
+    /* justify-content: between; */
+    /*¿Cómo forzar que esté al lado?*/
 }
