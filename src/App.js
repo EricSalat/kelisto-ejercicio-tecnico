@@ -10,39 +10,33 @@ import NavMenu from "./Components/NavMenu/NavMenu";
 
 function App() {
 
-  // const [data, setData] = useState([]);
+  const [data, setData] = useState([]);
+  const [totalBalance, setTotalBalance] = useState(0);
   
-  // const fetchData = async () => {
-  //   const response = await fetch('https://raw.githubusercontent.com/kelkoo-services/kelisto-frontend-js-challenge-crypto/master/data/response.json');
-  //   const jsonData = await response.json();
-  //   setData(jsonData);
-  // }
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
+  const fetchData = async () => {
+    const response = await fetch('https://raw.githubusercontent.com/kelkoo-services/kelisto-frontend-js-challenge-crypto/master/data/response.json');
+    const jsonData = await response.json();
+    setData(jsonData);
 
-  // console.log(data)
+    const sum = jsonData.reduce((acc, item) => {
+      return acc + item.stock;
+    }, 0);
+    setTotalBalance(sum);
+  
+
+  }
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <div className="App">
-      {/* <ul>
-        {      
-          data.map(item => (
-            <li 
-            key={item.id}
-            style={{ color: 'red', fontSize: '14px' }}
-            >
-              {item.name} - {item.stock}
-            </li>
-          ))
-        }
-      </ul> */}
       <Header />
       <Balance 
-      // data={data} 
+      totalBalance={totalBalance}
       />
       <Wrapper 
-      // data={data} 
+      data={data} 
       />
       <NavMenu />
 

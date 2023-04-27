@@ -2,18 +2,18 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "./Stocks.css";
 
-function Stocks () {
+function Stocks ({ data }) {
 
-const [data, setData] = useState([]);
+// const [data, setData] = useState([]);
   
-  const fetchData = async () => {
-    const response = await fetch('https://raw.githubusercontent.com/kelkoo-services/kelisto-frontend-js-challenge-crypto/master/data/response.json');
-    const jsonData = await response.json();
-    setData(jsonData);
-  }
-  useEffect(() => {
-    fetchData();
-  }, []);
+//   const fetchData = async () => {
+//     const response = await fetch('https://raw.githubusercontent.com/kelkoo-services/kelisto-frontend-js-challenge-crypto/master/data/response.json');
+//     const jsonData = await response.json();
+//     setData(jsonData);
+//   }
+//   useEffect(() => {
+//     fetchData();
+//   }, []);
 
     return(
         <>
@@ -25,11 +25,11 @@ const [data, setData] = useState([]);
                                 <div className="stock">
                                     <div className="stocks-1">
                                         <p className="currency">{item.name}</p>
-                                        <p className="stock-balance">{item.stock}</p>
+                                        <p className="stock-balance">${item.stock}</p>
                                     </div>
                                     <div className="stocks-2">
                                         <p className="currency-abbr">{item.sku}</p>
-                                        <p className={`variant ${item.variant > 0 ? 'profits' : 'losses'}`}>{item.variant}</p>
+                                        <p className={`variant ${item.variant > 0 ? 'profits' : 'losses'}`}>{item.variant}%</p>
                                     </div>
                                 </div>
                         </div>
