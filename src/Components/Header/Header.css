@@ -1,9 +1,9 @@
 .header {
     display: flex;
     justify-content: center;
-    align-items: baseline;
     background-color: var(--mainColor);
     padding: 20px 0;
+    position: relative;
 }
 
 .header p {
@@ -13,6 +13,12 @@
 
 .header i {
     color: var(--secondaryColor);
-    /* justify-content: between; */
-    /*¿Cómo forzar que esté al lado?*/
+
+}
+
+.k-icon-bell:before {
+    font-size: 22px;
+    position: absolute;
+    top: 18px;
+    right: 16px;
 }

@@ -1,0 +1,55 @@
+.stocks {
+    width:auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    background-color: var(--secondaryColor);
+    margin-bottom: 30px;
+}
+.stock {
+    min-width: 239px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.stocks-1, .stocks-2 {
+    display: flex;
+    justify-content: space-between;
+    /* align-content: space-between; */
+}
+
+.currency {
+    font-size: var(--text2);
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+
+.stock-balance {
+    font-size: var(--text2);    
+}
+
+.currency-abbr {
+    font-size: var(--text2);
+    color: var(--auxiliarTextColor);
+}
+
+.profits-losses {
+    font-size: var(--text3);
+    color: var(--green);
+}
+
+.circle {
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+    align-self: center;
+  }
+  
+

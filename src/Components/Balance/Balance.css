@@ -9,6 +9,7 @@
 .balance-title {
     font-size: var(--text3);
     color: var(--auxiliarTextColor);
+    letter-spacing: 0.1em;
     
 }
 

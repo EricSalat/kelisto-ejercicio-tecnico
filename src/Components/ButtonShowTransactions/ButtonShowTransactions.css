@@ -1,0 +1,8 @@
+.button {
+    width: 100%;
+    height: 64px;
+    color: var(--secondaryColor);
+    background-color: var(--mainColor);
+    border-radius: var(--border-button);
+    font-family: var(--text3);
+}

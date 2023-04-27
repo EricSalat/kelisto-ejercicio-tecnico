@@ -4,9 +4,9 @@ import "./Balance.css";
 function Balance() {
 
     return(
-        <div class="balance">
-            <p class="balance-title">your balance</p>
-            <p class="balance-total">$83,415.60</p>
+        <div className="balance">
+            <p className="balance-title">your balance</p>
+            <p className="balance-total">$83,415.60</p>
         </div>
     );
 }

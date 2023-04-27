@@ -1,8 +1,23 @@
 .wrapper {
-    border-radius: var(--border-wrapper);
+    border-radius: var(--border-wrapper) var(--border-wrapper) 0 0;
     background-color: var(--secondaryColor);
-    background-color: yellowgreen;
+    padding: 28px 32px;
+}
+
+.stocks-title {
+    color: var(--auxiliarTextColor);
+    text-align: left;
+    font-size: var(--text2);
+    letter-spacing: 0.1em;
+    padding-bottom: 37px;
+}
+
+.stock-container {
+    background-color: antiquewhite;
+    height: auto;
     /*Cambiarla*/
-    height: 300px;
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }

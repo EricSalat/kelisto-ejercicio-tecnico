@@ -3,9 +3,9 @@ import "./Header.css";
 
 function Header() {
     return(
-            <header class="header">
+            <header className="header">
                 <p>Hi Anakin</p>  
-                <i class="k-icon-bell"></i>
+                <i className="k-icon-bell"></i>
             </header>
     );
 }

@@ -1,0 +1,21 @@
+.nav-button-active {
+    height: 64px;
+    width: 64px;
+    background-color: var(--mainColor);
+    color: var(--secondaryColor);
+    border-radius: var(--border-button);
+    border: 1px solid var(--auxiliarColor);
+}
+
+.nav-button-inactive {
+    height: 64px;
+    width: 64px;
+    background-color: var(--secondaryColor);
+    color: var(--mainColor);
+    border-radius: var(--border-button);
+    border: 1px solid var(--auxiliarColor);
+}
+
+.k-icon-settings:before, .k-icon-refresh:before, .k-icon-dashboard:before, .k-icon-card:before {
+    font-size: 22px;  
+}

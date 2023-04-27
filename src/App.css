@@ -33,4 +33,5 @@
 .App {
     background-color: var(--mainColor);
     font-family: var(--mainFont);
+    height: 100vh;
 }
