@@ -5,6 +5,8 @@
     color: var(--secondaryColor);
     border-radius: var(--border-button);
     border: 1px solid var(--auxiliarColor);
+    cursor: pointer;
+
 }
 
 .nav-button-inactive {
@@ -14,7 +16,10 @@
     color: var(--mainColor);
     border-radius: var(--border-button);
     border: 1px solid var(--auxiliarColor);
+    cursor: pointer;
 }
+
+
 
 .k-icon-settings:before, .k-icon-refresh:before, .k-icon-dashboard:before, .k-icon-card:before {
     font-size: 22px;  
