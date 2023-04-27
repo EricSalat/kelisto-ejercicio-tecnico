@@ -13,7 +13,6 @@ const [data, setData] = useState([]);
   }
   useEffect(() => {
     fetchData();
-    // console.log(data.length);
   }, []);
 
     return(
@@ -30,7 +29,7 @@ const [data, setData] = useState([]);
                                     </div>
                                     <div className="stocks-2">
                                         <p className="currency-abbr">{item.sku}</p>
-                                        <p className="profits-losses">{item.variant}</p>
+                                        <p className={`variant ${item.variant > 0 ? 'profits' : 'losses'}`}>{item.variant}</p>
                                     </div>
                                 </div>
                         </div>

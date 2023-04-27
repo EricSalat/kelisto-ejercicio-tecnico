@@ -38,9 +38,14 @@
     color: var(--auxiliarTextColor);
 }
 
-.profits-losses {
+.variant {
     font-size: var(--text3);
+}
+.profits {
     color: var(--green);
+}
+.losses {
+    color: var(--red);
 }
 
 .circle {
