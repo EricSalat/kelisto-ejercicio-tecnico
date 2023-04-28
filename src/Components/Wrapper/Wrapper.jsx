@@ -1,7 +1,9 @@
 import React from "react";
 import "./Wrapper.css";
+import "../NavMenu/NavMenu.css";
 import Stocks from "../Stocks/Stocks";
 import ButtonShowTransactions from "../ButtonShowTransactions/ButtonShowTransactions";
+import NavMenu from "../NavMenu/NavMenu";
 
 function Wrapper({ data, formatBalanceValue }) {
 
@@ -14,8 +16,16 @@ function Wrapper({ data, formatBalanceValue }) {
                 data={data}
                 formatBalanceValue={formatBalanceValue}
                  />
+                <Stocks 
+                data={data}
+                formatBalanceValue={formatBalanceValue}
+                 />
+                <Stocks 
+                data={data}
+                formatBalanceValue={formatBalanceValue}
+                 />
             </div>
-                <ButtonShowTransactions />
+                {/* <NavMenu /> */}
         </div>
     );
 }

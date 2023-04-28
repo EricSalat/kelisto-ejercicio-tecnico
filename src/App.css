@@ -33,5 +33,15 @@
 .App {
     background-color: var(--mainColor);
     font-family: var(--mainFont);
-    height: 100vh;
+    height: auto;
+    margin: auto;
 }
+
+
+
+@media (min-width: 992px) {
+    .container {
+      width: 60vw;
+      margin: auto;
+    }
+  }

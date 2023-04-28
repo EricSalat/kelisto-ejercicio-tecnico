@@ -2,7 +2,19 @@
     border-radius: var(--border-wrapper) var(--border-wrapper) 0 0;
     background-color: var(--secondaryColor);
     padding: 28px 32px;
+    /* width: 100%; */
+    /* height: auto; */
 }
+
+@media (min-width: 992px) {
+   
+    .wrapper {
+        border-radius: var(--border-wrapper);
+
+
+    }
+  }
+
 
 .stocks-title {
     color: var(--auxiliarTextColor);
@@ -13,11 +25,12 @@
 }
 
 .stock-container {
-    background-color: antiquewhite;
     height: auto;
     /*Cambiarla*/
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    height: 100%;
+    overflow-y: auto;
 }

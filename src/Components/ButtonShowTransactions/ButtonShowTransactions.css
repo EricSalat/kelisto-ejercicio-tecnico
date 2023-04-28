@@ -5,4 +5,5 @@
     background-color: var(--mainColor);
     border-radius: var(--border-button);
     font-family: var(--text3);
+    margin-top: 5px;
 }

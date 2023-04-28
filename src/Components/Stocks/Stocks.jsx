@@ -23,7 +23,7 @@ function Stocks ({ data, formatBalanceValue }) {
                         </div>
                     ))
                 ) : (
-                    <p className="currency">Cargando datos...</p>
+                    <p className="currency currency--loading">Cargando datos...</p>
                 )
             }
         </>

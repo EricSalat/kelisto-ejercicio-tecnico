@@ -37,15 +37,18 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <Balance 
-      // totalBalance={totalBalance}
-      totalBalance={formatBalanceValue(totalBalance)} />
-      <Wrapper 
-      data={data}
-      formatBalanceValue={formatBalanceValue} 
-      />
-      <NavMenu />
+        <Header />
+      <div className="container">
+        <Balance
+        totalBalance={formatBalanceValue(totalBalance)} />
+        <Wrapper
+        data={data}
+        formatBalanceValue={formatBalanceValue} />
+        <NavMenu/>
+
+
+    
+      </div>
 
     </div>
   );
