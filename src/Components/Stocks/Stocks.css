@@ -1,15 +1,21 @@
 .stocks {
-    /* width:auto; */
     width: 100%;
     display: flex;
-    /* flex-direction: row; */
     flex-wrap: wrap;
     justify-content: space-between;
     /* align-content: center; */
     align-items: stretch;
     background-color: var(--secondaryColor);
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
+    margin-bottom: 2px;
+    padding:11px 32px 11px 32px;
 }
+
+.stocks:hover {
+    background-color: var(--auxiliarColor);
+}
+
+
 .stock {
     /* min-width: 239px; */
     flex: 1 1 auto;
