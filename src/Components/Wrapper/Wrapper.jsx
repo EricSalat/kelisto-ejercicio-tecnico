@@ -3,15 +3,17 @@ import "./Wrapper.css";
 import Stocks from "../Stocks/Stocks";
 import ButtonShowTransactions from "../ButtonShowTransactions/ButtonShowTransactions";
 
-function Wrapper({data}) {
+function Wrapper({ data, formatBalanceValue }) {
 
-    // const { data } = props;
 
     return (
         <div className="wrapper">
             <p class="stocks-title">Recent</p>
             <div className="stock-container">
-                <Stocks data={data} />
+                <Stocks 
+                data={data}
+                formatBalanceValue={formatBalanceValue}
+                 />
             </div>
                 <ButtonShowTransactions />
         </div>

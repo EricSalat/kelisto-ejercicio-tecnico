@@ -1,19 +1,7 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import "./Stocks.css";
 
-function Stocks ({ data }) {
-
-// const [data, setData] = useState([]);
-  
-//   const fetchData = async () => {
-//     const response = await fetch('https://raw.githubusercontent.com/kelkoo-services/kelisto-frontend-js-challenge-crypto/master/data/response.json');
-//     const jsonData = await response.json();
-//     setData(jsonData);
-//   }
-//   useEffect(() => {
-//     fetchData();
-//   }, []);
+function Stocks ({ data, formatBalanceValue }) {
 
     return(
         <>
@@ -25,7 +13,7 @@ function Stocks ({ data }) {
                                 <div className="stock">
                                     <div className="stocks-1">
                                         <p className="currency">{item.name}</p>
-                                        <p className="stock-balance">${item.stock}</p>
+                                        <p className="stock-balance">{formatBalanceValue(item.stock)}</p>
                                     </div>
                                     <div className="stocks-2">
                                         <p className="currency-abbr">{item.sku}</p>
