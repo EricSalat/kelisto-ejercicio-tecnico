@@ -2,7 +2,6 @@
 
 
 :root {
-
     /* Font family */
     --mainFont: 'Roboto', sans-serif;
     /* Font size */
@@ -31,12 +30,11 @@
   }
 
 .App {
-    background-color: var(--mainColor);
-    font-family: var(--mainFont);
     height: auto;
     margin: auto;
+    background-color: var(--mainColor);
+    font-family: var(--mainFont);
 }
-
 
 
 @media (min-width: 992px) {
@@ -44,4 +42,14 @@
       width: 60vw;
       margin: auto;
     }
+  }
+
+  .visually-hidden {
+    display: none;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); 
+    white-space: nowrap; 
   }

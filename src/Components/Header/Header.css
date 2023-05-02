@@ -1,9 +1,9 @@
 .header {
+    position: relative;
     display: flex;
     justify-content: center;
-    background-color: var(--mainColor);
     padding: 20px 0;
-    position: relative;
+    background-color: var(--mainColor);
 }
 
 .header p {
@@ -16,9 +16,9 @@
 }
 
 .k-icon-bell:before {
-    font-size: 22px;
     position: absolute;
     top: 18px;
     right: 16px;
+    font-size: 22px;
     cursor: pointer;
 }

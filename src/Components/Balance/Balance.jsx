@@ -7,16 +7,9 @@ function Balance({ totalBalance }) {
     return(
         
         <div className="balance">
-            <p className="balance-title">your balance</p>
+            <h2 className="balance-title">your balance</h2>
             {
                 totalBalance 
-                // ? <p className="balance-total">{totalBalance.toLocaleString('en-US', {
-                //     style: 'currency',
-                //     currency: 'USD',
-                //     minimumFractionDigits: 2,
-                //     maximumFractionDigits: 2,
-                //     useGrouping: true,
-                //   })}</p>
                 ? <p className="balance-total">{totalBalance}</p>
                 : <p className="balance-total">Cargando...</p>
             }

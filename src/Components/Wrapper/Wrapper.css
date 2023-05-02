@@ -7,16 +7,6 @@
     /* height: auto; */
 }
 
-@media (min-width: 992px) {
-   
-    .wrapper {
-        border-radius: var(--border-wrapper);
-
-
-    }
-  }
-
-
 .stocks-title {
     color: var(--auxiliarTextColor);
     text-align: left;
@@ -27,8 +17,6 @@
 }
 
 .stock-container {
-    height: auto;
-    /*Cambiarla*/
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -36,3 +24,9 @@
     height: 100%;
     overflow-y: auto;
 }
+
+@media (min-width: 992px) {
+    .wrapper {
+        border-radius: var(--border-wrapper);
+    }
+  }

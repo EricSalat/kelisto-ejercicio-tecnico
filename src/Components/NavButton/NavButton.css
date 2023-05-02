@@ -1,21 +1,21 @@
 .nav-button-active {
-    height: 64px;
     width: 64px;
-    background-color: var(--mainColor);
+    height: 64px;
     color: var(--secondaryColor);
-    border-radius: var(--border-button);
+    background-color: var(--mainColor);
     border: 1px solid var(--auxiliarColor);
+    border-radius: var(--border-button);
     cursor: pointer;
 
 }
 
 .nav-button-inactive {
-    height: 64px;
     width: 64px;
-    background-color: var(--secondaryColor);
+    height: 64px;
     color: var(--mainColor);
-    border-radius: var(--border-button);
+    background-color: var(--secondaryColor);
     border: 1px solid var(--auxiliarColor);
+    border-radius: var(--border-button);
     cursor: pointer;
 }
 

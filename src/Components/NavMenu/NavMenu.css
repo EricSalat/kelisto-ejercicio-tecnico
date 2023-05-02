@@ -1,26 +1,22 @@
 .nav-menu-icons {
     display: flex;
     justify-content: space-between;
-    /*Quito este padding para poder ponerlos dentro del wrapper y que queden alienados*/
-    /* padding: 0 32px 28px; */
     margin-top: 28px;
 }
 
 .nav-menu {
-    width: 100%;
     position: fixed;
+    width: 100%;
     bottom: 0;
     left: 50%;
+    padding: 0 32px 28px;
     transform: translateX(-50%);
     background-color: #ffffff;
-    padding: 0 32px 28px;
 
 }
 
 @media (min-width: 992px) {
     .nav-menu {
         width: 60vw;
-     
-    }
-    
+    }   
   }
